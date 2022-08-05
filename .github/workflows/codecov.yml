@@ -3,9 +3,16 @@ on: [push, pull_request]
 jobs:
   run:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
     steps:
       - name: Fetch
         uses: actions/checkout@master
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
       - name: Test
         run: npm run test
       - name: Upload
