@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/numbers-total/static/css/main.964fdded.css",
+    "main.js": "/numbers-total/static/js/main.3b27a239.js",
+    "index.html": "/numbers-total/index.html",
+    "main.964fdded.css.map": "/numbers-total/static/css/main.964fdded.css.map",
+    "main.3b27a239.js.map": "/numbers-total/static/js/main.3b27a239.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.964fdded.css",
+    "static/js/main.3b27a239.js"
+  ]
+}
