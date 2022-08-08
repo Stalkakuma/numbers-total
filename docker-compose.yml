@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  app:
+    build: .
+    # Comment volume binding in peoduction mode
+    volumes:
+      - .:/app
+    ports:
+      - 0.0.0.0:3000:3000
+    env_file: .env
